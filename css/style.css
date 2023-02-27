@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 :root{
     --white_on: #9faff1fa;
     --white_off: #9faff1a1;
@@ -6,6 +9,15 @@
     --black-on: #03050c;
     --white-on: #ffffffa8;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+
 body::-webkit-scrollbar {
     display: none;
   }
@@ -20,6 +32,12 @@ body::-webkit-scrollbar {
         color: var(--white-on);
       }
 }
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    color: var(--white_on);
+}
+
 #welcome-section {
     height: 100vh;
     width: 100vw;
@@ -27,30 +45,68 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     font-size: 4em;
-    font-family: 'Tilt Prism', cursive;
 }
-#navbar {
-    position: fixed;
-    width: 100vw;
-    display: flex;
-    justify-content: right;
-}
-.homeproj {
-    margin: 0 1em;
-    padding-right: 1em;
-    font-size: 2em;
-}
-a {
-    text-decoration: none;
-    color: antiquewhite;
-    font-size: 2em;
-}
+
 #projects {
     display: flex;
     width: 100vw;
+    height: 100vh;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
 }
+
+#personal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#navbar {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: right;
+    z-index: 100;
+    background-color: var(--black-on);
+}
+
+.homeproj {
+    margin: 0 0.9em;
+    padding-right: 0.25em;
+    font-size: 1.7em;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white_off);
+    font-size: 2em;
+    transition: 0.5s;
+}
+
 .project-tile {
-    padding: 0 1em;
+    padding: 1.5em 0;
+}
+
+.personal-title {
+    padding: 1em 0;
+}
+
+a:hover {
+    color: var(--white_on);
+}
+
+
+#profile-link {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
