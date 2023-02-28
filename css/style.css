@@ -135,7 +135,7 @@ a:hover, .fa:hover {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     width: 17em;
     height: 17em;
     border-radius: 100%;
